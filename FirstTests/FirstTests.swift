@@ -32,5 +32,27 @@ final class FirstTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testHaterStartsNicely() {
+        let hater = Hater()
+        
+        XCTAssertFalse(hater.hating)
+    }
+    
+    func testHaterHadABadDay() {
+        var hater = Hater()
+        
+        hater.hadABadDay()
+        
+        XCTAssertTrue(hater.hating)
+    }
+    
+    func testHaterHadAGoodDay() {
+        var hater = Hater()
+        
+        hater.hadAGoodDay()
+        
+        XCTAssertFalse(hater.hating)
+    }
 
 }
