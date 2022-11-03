@@ -34,14 +34,20 @@ final class ConverterTests: XCTestCase {
         }
     }
     
-    func testFahrenheitToCelcius() {
+    func test32FahrenheitIs0Celcius() {
         let sut = Converter()
         
-        let result1 = sut.convertToCelsius(fahrenheit: 32.0)
-        let result2 = sut.convertToCelsius(fahrenheit: 212.0)
+        let result = sut.convertToCelsius(fahrenheit: 32.0)
         
-        XCTAssertEqual(result1, 0)
-        XCTAssertEqual(result2, 100)
+        XCTAssertEqual(result, 0)
+    }
+    
+    func test212FahrenheitIs100Celcius() {
+        let sut = Converter()
+        
+        let result = sut.convertToCelsius(fahrenheit: 212.0)
+
+        XCTAssertEqual(result, 100)
     }
 
 }
