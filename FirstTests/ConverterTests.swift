@@ -11,6 +11,7 @@ import XCTest
 final class ConverterTests: XCTestCase {
 
     override func setUpWithError() throws {
+        continueAfterFailure = false
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
@@ -31,6 +32,16 @@ final class ConverterTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testFahrenheitToCelcius() {
+        let sut = Converter()
+        
+        let result1 = sut.convertToCelsius(fahrenheit: 32.0)
+        let result2 = sut.convertToCelsius(fahrenheit: 212.0)
+        
+        XCTAssertEqual(result1, 0)
+        XCTAssertEqual(result2, 100)
     }
 
 }
