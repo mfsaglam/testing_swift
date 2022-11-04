@@ -9,13 +9,17 @@ import XCTest
 @testable import First
 
 final class ConverterTests: XCTestCase {
+    
+    var sut: Converter!
 
     override func setUpWithError() throws {
         continueAfterFailure = false
+        sut = Converter()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDownWithError() throws {
+        sut = nil
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
@@ -35,16 +39,12 @@ final class ConverterTests: XCTestCase {
     }
     
     func test32FahrenheitIs0Celcius() {
-        let sut = Converter()
-        
         let result = sut.convertToCelsius(fahrenheit: 32.0)
         
         XCTAssertEqual(result, 0)
     }
     
     func test212FahrenheitIs100Celcius() {
-        let sut = Converter()
-        
         let result = sut.convertToCelsius(fahrenheit: 212.0)
 
         XCTAssertEqual(result, 100)
