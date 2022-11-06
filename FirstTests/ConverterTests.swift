@@ -38,5 +38,15 @@ final class ConverterTests: XCTestCase {
 
         XCTAssertEqual(result, 100, accuracy: 0.000001)
     }
+    
+    func test10DevidedBy3Is3AndHasReminder1() {
+        let number1 = 10
+        let number2 = 3
+        
+        let result = sut.divisionRemainder(of: 10, dividedBy: 3)
+        
+        XCTAssertEqual(result.quotient, 3)
+        XCTAssertEqual(result.remainder, 1)
+    }
 
 }
