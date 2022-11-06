@@ -13,7 +13,7 @@ final class UserTests: XCTestCase {
     var sut: User!
     
     func createTestUser(projects: Int, itemsPerProject: Int) -> User {
-        let user = User(name: "Taylor Swift")
+        let user = User(name: UUID().uuidString)
         XCTAssertEqual(user.projects.count, 0)
         
         for album in 1...projects {
