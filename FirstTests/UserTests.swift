@@ -11,9 +11,25 @@ import XCTest
 final class UserTests: XCTestCase {
     
     var sut: User!
+    
+    func createTestUser(projects: Int, itemsPerProject: Int) -> User {
+        let user = User(name: "Taylor Swift")
+        XCTAssertEqual(user.projects.count, 0)
+        
+        for album in 1...projects {
+            let project = Project(name: "Album #\(album)")
+            user.addProject(project)
+            
+            for song in 1...itemsPerProject {
+                let item = ToDoItem(name: "Write song #\(song)")
+                project.addItem(item)
+            }
+        }
+        return user
+    }
 
     override func setUpWithError() throws {
-        sut = User(name: "Taylor Swift")
+        sut = createTestUser(projects: 3, itemsPerProject: 10)
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
@@ -23,15 +39,6 @@ final class UserTests: XCTestCase {
     }
     
     func test3ItemsAnd10SongsAre30ItemsInTotal() {
-        for album in 1...3 {
-            let project = Project(name: "Album #\(album)")
-            sut.addProject(project)
-            
-            for song in 1...10 {
-                let item = ToDoItem(name: "Write song #\(song)")
-                project.addItem(item)
-            }
-        }
         
         let rowTitle = sut.outstandingTasksString
         
