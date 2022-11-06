@@ -40,10 +40,10 @@ final class ConverterTests: XCTestCase {
     }
     
     func test10DevidedBy3Is3AndHasReminder1() {
-        let number1 = 10
-        let number2 = 3
+        let divident = 10
+        let divisor = 3
         
-        let result = sut.divisionRemainder(of: number1, dividedBy: number2)
+        let result = sut.divisionRemainder(of: divident, dividedBy: divisor)
         
         XCTAssertEqual(result.quotient, 3)
         XCTAssertEqual(result.remainder, 1)
