@@ -43,7 +43,7 @@ final class ConverterTests: XCTestCase {
         let number1 = 10
         let number2 = 3
         
-        let result = sut.divisionRemainder(of: 10, dividedBy: 3)
+        let result = sut.divisionRemainder(of: number1, dividedBy: number2)
         
         XCTAssertEqual(result.quotient, 3)
         XCTAssertEqual(result.remainder, 1)
