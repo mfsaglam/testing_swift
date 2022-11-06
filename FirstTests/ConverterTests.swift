@@ -11,6 +11,11 @@ import XCTest
 final class ConverterTests: XCTestCase {
     
     var sut: Converter!
+    
+    func verifyDivision(_ result: (quotient: Int, remainder: Int), expectedQuotient: Int, expectedRemainder: Int) {
+        XCTAssertEqual(result.quotient, expectedQuotient)
+        XCTAssertEqual(result.remainder, expectedRemainder)
+    }
 
     override func setUpWithError() throws {
         continueAfterFailure = false
@@ -45,8 +50,7 @@ final class ConverterTests: XCTestCase {
         
         let result = sut.divisionRemainder(of: divident, dividedBy: divisor)
         
-        XCTAssertEqual(result.quotient, 3)
-        XCTAssertEqual(result.remainder, 1)
+        verifyDivision(result, expectedQuotient: 3, expectedRemainder: 1)
     }
 
 }
