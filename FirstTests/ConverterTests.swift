@@ -12,9 +12,9 @@ final class ConverterTests: XCTestCase {
     
     var sut: Converter!
     
-    func verifyDivision(_ result: (quotient: Int, remainder: Int), expectedQuotient: Int, expectedRemainder: Int) {
-        XCTAssertEqual(result.quotient, expectedQuotient)
-        XCTAssertEqual(result.remainder, expectedRemainder)
+    func verifyDivision(_ result: (quotient: Int, remainder: Int), expectedQuotient: Int, expectedRemainder: Int, file: StaticString = #file, line: UInt = #line) {
+        XCTAssertEqual(result.quotient, expectedQuotient, file: file, line: line)
+        XCTAssertEqual(result.remainder, expectedRemainder, file: file, line: line)
     }
 
     override func setUpWithError() throws {
@@ -50,7 +50,7 @@ final class ConverterTests: XCTestCase {
         
         let result = sut.divisionRemainder(of: divident, dividedBy: divisor)
         
-        verifyDivision(result, expectedQuotient: 3, expectedRemainder: 1)
+        verifyDivision(result, expectedQuotient: 3, expectedRemainder: 2)
     }
 
 }
