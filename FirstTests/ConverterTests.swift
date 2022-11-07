@@ -50,7 +50,7 @@ final class ConverterTests: XCTestCase {
         
         let result = sut.divisionRemainder(of: divident, dividedBy: divisor)
         
-        verifyDivision(result, expectedQuotient: 3, expectedRemainder: 2)
+        verifyDivision(result, expectedQuotient: 3, expectedRemainder: 1)
     }
 
 }
