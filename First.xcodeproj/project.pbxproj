@@ -23,6 +23,7 @@
 		12A9C98D2917E16B003625FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C98C2917E16B003625FB /* User.swift */; };
 		12A9C98F2917E344003625FB /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C98E2917E344003625FB /* UserTests.swift */; };
 		12A9C995291AC9B7003625FB /* ThrowingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C994291AC9B7003625FB /* ThrowingTests.swift */; };
+		12A9C997291AD7C5003625FB /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C996291AD7C5003625FB /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		12A9C98C2917E16B003625FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12A9C98E2917E344003625FB /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		12A9C994291AC9B7003625FB /* ThrowingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowingTests.swift; sourceTree = "<group>"; };
+		12A9C996291AD7C5003625FB /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				12A9C98E2917E344003625FB /* UserTests.swift */,
 				128EDC392915A76F002D5F7C /* LifeCycleTests.swift */,
 				12A9C994291AC9B7003625FB /* ThrowingTests.swift */,
+				12A9C996291AD7C5003625FB /* ViewControllerTests.swift */,
 			);
 			path = FirstTests;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A9C997291AD7C5003625FB /* ViewControllerTests.swift in Sources */,
 				12A9C98F2917E344003625FB /* UserTests.swift in Sources */,
 				12A9C995291AC9B7003625FB /* ThrowingTests.swift in Sources */,
 				125D7B412913E79F00AA25FC /* ConverterTests.swift in Sources */,
