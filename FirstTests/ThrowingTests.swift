@@ -45,8 +45,10 @@ final class ThrowingTests: XCTestCase {
         do {
             try sut.play()
             XCTFail()
-        } catch {
+        } catch GameError.notPurchased {
             //there is no XCTSuccess()
+        } catch {
+            XCTFail()
         }
         
     }
