@@ -7,7 +7,13 @@
 
 import XCTest
 
-enum GameError: Error {
+extension LocalizedError {
+    var errorDescription: String? {
+        return "\(self)"
+    }
+}
+
+enum GameError: LocalizedError {
     case notPurchased
     case notInstalled
     case parentalControlsDisallowed
@@ -64,6 +70,20 @@ final class ThrowingTests: XCTestCase {
         let game = Game(name: "Exploding Monkeys")
         
         XCTAssertNoThrow(try game.play())
+    }
+    
+    func testPlayingDeadStormRisingThrows() {
+        let game = Game(name: "Dead Storm Rising")
+        
+        XCTAssertThrowsError(try game.play()) { error in
+            XCTAssertEqual(error as? GameError, GameError.parentalControlsDisallowed)
+        }
+    }
+    
+    func testPlayigCrashyPlaneDoesntThrow() throws {
+        let game = Game(name: "Crashy Plane")
+        
+        try game.play()
     }
     
 }
