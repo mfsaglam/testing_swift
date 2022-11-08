@@ -50,7 +50,14 @@ final class ThrowingTests: XCTestCase {
         } catch {
             XCTFail()
         }
+    }
+    
+    func testPlayingBlastAzapThrows() {
+        let game = Game(name: "Blastazap")
         
+        XCTAssertThrowsError(try game.play()) { error in
+            XCTAssertEqual(error as? GameError, GameError.notInstalled)
+        }
     }
     
 }
