@@ -60,4 +60,10 @@ final class ThrowingTests: XCTestCase {
         }
     }
     
+    func testPlayingExplodingMonkeysDoesntThrow() {
+        let game = Game(name: "Exploding Monkeys")
+        
+        XCTAssertNoThrow(try game.play())
+    }
+    
 }
