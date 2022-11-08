@@ -22,6 +22,7 @@
 		128EDC3A2915A76F002D5F7C /* LifeCycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128EDC392915A76F002D5F7C /* LifeCycleTests.swift */; };
 		12A9C98D2917E16B003625FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C98C2917E16B003625FB /* User.swift */; };
 		12A9C98F2917E344003625FB /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C98E2917E344003625FB /* UserTests.swift */; };
+		12A9C995291AC9B7003625FB /* ThrowingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C994291AC9B7003625FB /* ThrowingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		128EDC392915A76F002D5F7C /* LifeCycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycleTests.swift; sourceTree = "<group>"; };
 		12A9C98C2917E16B003625FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12A9C98E2917E344003625FB /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		12A9C994291AC9B7003625FB /* ThrowingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				125D7B402913E79F00AA25FC /* ConverterTests.swift */,
 				12A9C98E2917E344003625FB /* UserTests.swift */,
 				128EDC392915A76F002D5F7C /* LifeCycleTests.swift */,
+				12A9C994291AC9B7003625FB /* ThrowingTests.swift */,
 			);
 			path = FirstTests;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12A9C98F2917E344003625FB /* UserTests.swift in Sources */,
+				12A9C995291AC9B7003625FB /* ThrowingTests.swift in Sources */,
 				125D7B412913E79F00AA25FC /* ConverterTests.swift in Sources */,
 				127590602912BD7400FB1E75 /* FirstTests.swift in Sources */,
 				128EDC3A2915A76F002D5F7C /* LifeCycleTests.swift in Sources */,
