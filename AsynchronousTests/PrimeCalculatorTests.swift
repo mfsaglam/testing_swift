@@ -21,12 +21,15 @@ final class PrimeCalculatorTests: XCTestCase {
     func testPrimesUpTo100ShouldBe0() {
         // given
         let maximumCount = 100
+        let expectation = XCTestExpectation(description: "calculate primes up to \(maximumCount)")
 
         // when
         PrimeCalculator.calculate(upTo: maximumCount) {
             // then
             XCTAssertEqual($0.count, 0)
+            expectation.fulfill()
         }
+        wait(for: [expectation], timeout: 10)
     }
 
 }
