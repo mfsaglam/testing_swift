@@ -26,7 +26,7 @@ final class PrimeCalculatorTests: XCTestCase {
         // when
         PrimeCalculator.calculate(upTo: maximumCount) {
             // then
-            XCTAssertEqual($0.count, 0)
+            XCTAssertEqual($0.count, 25)
             expectation.fulfill()
         }
         wait(for: [expectation], timeout: 10)
