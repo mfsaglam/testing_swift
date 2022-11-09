@@ -25,6 +25,7 @@
 		12A9C995291AC9B7003625FB /* ThrowingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C994291AC9B7003625FB /* ThrowingTests.swift */; };
 		12A9C997291AD7C5003625FB /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C996291AD7C5003625FB /* ViewControllerTests.swift */; };
 		12A9C99F291C17F3003625FB /* AsynchronousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C99E291C17F3003625FB /* AsynchronousTests.swift */; };
+		12A9C9A6291C1AB5003625FB /* PrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C9A5291C1AB5003625FB /* PrimeCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		12A9C996291AD7C5003625FB /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		12A9C99C291C17F3003625FB /* AsynchronousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsynchronousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A9C99E291C17F3003625FB /* AsynchronousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTests.swift; sourceTree = "<group>"; };
+		12A9C9A5291C1AB5003625FB /* PrimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				127590782912BD9D00FB1E75 /* Hater.swift */,
 				125D7B3E2913E73600AA25FC /* Converter.swift */,
 				12A9C98C2917E16B003625FB /* User.swift */,
+				12A9C9A5291C1AB5003625FB /* PrimeCalculator.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				1275904D2912BD7300FB1E75 /* ViewController.swift in Sources */,
 				127590492912BD7300FB1E75 /* AppDelegate.swift in Sources */,
 				12A9C98D2917E16B003625FB /* User.swift in Sources */,
+				12A9C9A6291C1AB5003625FB /* PrimeCalculator.swift in Sources */,
 				127590792912BD9D00FB1E75 /* Hater.swift in Sources */,
 				1275904B2912BD7300FB1E75 /* SceneDelegate.swift in Sources */,
 				125D7B3F2913E73600AA25FC /* Converter.swift in Sources */,
