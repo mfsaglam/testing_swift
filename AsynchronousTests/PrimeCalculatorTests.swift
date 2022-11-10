@@ -31,5 +31,18 @@ final class PrimeCalculatorTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 10)
     }
+    
+    func testPrimesUpTo100ShouldBe25() {
+        // given
+        let maximumCount = 100
+        let expectation = XCTestExpectation(description: "Calculate primes up to \(maximumCount)")
+        expectation.expectedFulfillmentCount = 25
 
+        // when
+        PrimeCalculator.calculateStreaming(upTo: maximumCount) { number in
+            expectation.fulfill()
+        }
+
+        wait(for: [expectation], timeout: 3)
+    }
 }
