@@ -18,7 +18,7 @@ final class PrimeCalculatorTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testPrimesUpTo100ShouldBe0() {
+    func testPrimesUpTo100ShouldBe25() {
         // given
         let maximumCount = 100
         let expectation = XCTestExpectation(description: "calculate primes up to \(maximumCount)")
@@ -32,7 +32,7 @@ final class PrimeCalculatorTests: XCTestCase {
         wait(for: [expectation], timeout: 10)
     }
     
-    func testPrimesUpTo100ShouldBe25() {
+    func testPrimesUpTo100ShouldBeStreamed25() {
         // given
         let maximumCount = 100
         let expectation = XCTestExpectation(description: "Calculate primes up to \(maximumCount)")
