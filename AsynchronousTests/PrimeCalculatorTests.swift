@@ -18,31 +18,49 @@ final class PrimeCalculatorTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+//    func testPrimesUpTo100ShouldBe25() {
+//        // given
+//        let maximumCount = 100
+//        let expectation = XCTestExpectation(description: "calculate primes up to \(maximumCount)")
+//
+//        // when
+//        PrimeCalculator.calculate(upTo: maximumCount) {
+//            // then
+//            XCTAssertEqual($0.count, 25)
+//            expectation.fulfill()
+//        }
+//        wait(for: [expectation], timeout: 10)
+//    }
+//
+//    func testPrimesUpTo100ShouldBeStreamed25() {
+//        // given
+//        let maximumCount = 100
+//        let expectation = XCTestExpectation(description: "Calculate primes up to \(maximumCount)")
+//        expectation.expectedFulfillmentCount = 25
+//
+//        // when
+//        PrimeCalculator.calculateStreaming(upTo: maximumCount) { number in
+//            expectation.fulfill()
+//        }
+//
+//        wait(for: [expectation], timeout: 3)
+//    }
+    
     func testPrimesUpTo100ShouldBe25() {
         // given
         let maximumCount = 100
-        let expectation = XCTestExpectation(description: "calculate primes up to \(maximumCount)")
 
         // when
-        PrimeCalculator.calculate(upTo: maximumCount) {
-            // then
+        let progress = PrimeCalculator.calculate(upTo: maximumCount) {
             XCTAssertEqual($0.count, 25)
-            expectation.fulfill()
         }
+
+        // then
+        let predicate = NSPredicate(
+            format: "%@.completedUnitCount == %@", argumentArray: [progress, maximumCount]
+        )
+
+        let expectation = XCTNSPredicateExpectation(predicate: predicate, object: progress)
         wait(for: [expectation], timeout: 10)
-    }
-    
-    func testPrimesUpTo100ShouldBeStreamed25() {
-        // given
-        let maximumCount = 100
-        let expectation = XCTestExpectation(description: "Calculate primes up to \(maximumCount)")
-        expectation.expectedFulfillmentCount = 25
-
-        // when
-        PrimeCalculator.calculateStreaming(upTo: maximumCount) { number in
-            expectation.fulfill()
-        }
-
-        wait(for: [expectation], timeout: 3)
     }
 }
