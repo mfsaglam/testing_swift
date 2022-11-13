@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import First
 
 final class LinkedInUsers: XCTestCase {
 
@@ -17,6 +18,16 @@ final class LinkedInUsers: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    
+    func testUserUpgradedPostsNotification() {
+        // given
+        let user = LinkedInUser()
+        let expectation = XCTNSNotificationExpectation(name: LinkedInUser.upgradedNotification)
+
+        // when
+        user.upgrade()
+
+        // then
+        wait(for: [expectation], timeout: 3)
+    }
 
 }
