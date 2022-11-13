@@ -51,8 +51,8 @@ final class PrimeCalculatorTests: XCTestCase {
         let maximumCount = 100
 
         // when
-        let progress = PrimeCalculator.calculate(upTo: maximumCount) {
-            XCTAssertEqual($0.count, 25)
+        let progress = PrimeCalculator.calculate(upTo: maximumCount) { primes in
+            XCTAssertEqual(primes.count, 25)
         }
 
         // then
