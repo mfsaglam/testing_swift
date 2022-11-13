@@ -62,6 +62,8 @@ struct PrimeCalculator {
 //        }
 //    }
     
+    ///“Personally I don’t think this approach is anything like as clean as completion closures, but sometimes you won’t have a choice - many of Apple’s own APIs use Progess objects, so there is no other option.”
+    
     static func calculate(upTo max: Int, completion: @escaping ([Int]) -> Void) -> Progress {
         // create a Progress object that counts up to our maximum number
         let progress = Progress(totalUnitCount: Int64(max))
