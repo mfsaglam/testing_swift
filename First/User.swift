@@ -56,12 +56,20 @@ class ToDoItem {
 ///LinkedIn User
 struct LinkedInUser {
     static let upgradedNotification = Notification.Name("UserUpgraded")
-
+    
     func upgrade() {
         DispatchQueue.global().async {
             Thread.sleep(forTimeInterval: 1)
             let center = NotificationCenter.default
             center.post(name: LinkedInUser.upgradedNotification, object: nil)
+        }
+    }
+    
+    func upgradeWithLevel() {
+        DispatchQueue.global().async {
+            Thread.sleep(forTimeInterval: 1)
+            let center = NotificationCenter.default
+            center.post(name: LinkedInUser.upgradedNotification, object: nil, userInfo: ["level": "gold"])
         }
     }
 }
