@@ -48,7 +48,7 @@ final class LinkedInUserTests: XCTestCase {
         }
 
         // when
-        user.upgrade()
+        user.upgradeWithLevel()
 
         // then
         wait(for: [expectation], timeout: 3)
