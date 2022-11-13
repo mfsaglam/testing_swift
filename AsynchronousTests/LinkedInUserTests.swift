@@ -29,5 +29,29 @@ final class LinkedInUserTests: XCTestCase {
         // then
         wait(for: [expectation], timeout: 3)
     }
+    
+    func testUserUpgradedWithLevelPostsNotification() {
+        // given
+        let user = LinkedInUser()
+        let expectation = XCTNSNotificationExpectation(name: LinkedInUser.upgradedNotification)
+
+        expectation.handler = { notification -> Bool in
+            guard let level = notification.userInfo?["level"] as? String else {
+                return false
+            }
+
+            if level == "gold" {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        // when
+        user.upgrade()
+
+        // then
+        wait(for: [expectation], timeout: 3)
+    }
 
 }
