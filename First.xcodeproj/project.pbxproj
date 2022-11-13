@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		124193FF2920F34B004FF907 /* LinkedInUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124193FE2920F34B004FF907 /* LinkedInUsers.swift */; };
+		124193FF2920F34B004FF907 /* LinkedInUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124193FE2920F34B004FF907 /* LinkedInUserTests.swift */; };
 		125D7B3F2913E73600AA25FC /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D7B3E2913E73600AA25FC /* Converter.swift */; };
 		125D7B412913E79F00AA25FC /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D7B402913E79F00AA25FC /* ConverterTests.swift */; };
 		127590492912BD7300FB1E75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127590482912BD7300FB1E75 /* AppDelegate.swift */; };
@@ -55,7 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		124193FE2920F34B004FF907 /* LinkedInUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInUsers.swift; sourceTree = "<group>"; };
+		124193FE2920F34B004FF907 /* LinkedInUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInUserTests.swift; sourceTree = "<group>"; };
 		125D7B3E2913E73600AA25FC /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		125D7B402913E79F00AA25FC /* ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTests.swift; sourceTree = "<group>"; };
 		127590452912BD7300FB1E75 /* First.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = First.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,7 +182,7 @@
 			children = (
 				12A9C99E291C17F3003625FB /* AsynchronousTests.swift */,
 				12A9C9A7291C2344003625FB /* PrimeCalculatorTests.swift */,
-				124193FE2920F34B004FF907 /* LinkedInUsers.swift */,
+				124193FE2920F34B004FF907 /* LinkedInUserTests.swift */,
 			);
 			path = AsynchronousTests;
 			sourceTree = "<group>";
@@ -384,7 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				124193FF2920F34B004FF907 /* LinkedInUsers.swift in Sources */,
+				124193FF2920F34B004FF907 /* LinkedInUserTests.swift in Sources */,
 				12A9C99F291C17F3003625FB /* AsynchronousTests.swift in Sources */,
 				12A9C9A9291C23A8003625FB /* PrimeCalculatorTests.swift in Sources */,
 			);
