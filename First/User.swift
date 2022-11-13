@@ -72,4 +72,12 @@ struct LinkedInUser {
             center.post(name: LinkedInUser.upgradedNotification, object: nil, userInfo: ["level": "gold"])
         }
     }
+    
+    ///Dependency injection
+    func upgrade(using center: NotificationCenter = NotificationCenter.default) {
+        DispatchQueue.global().async {
+            Thread.sleep(forTimeInterval: 1)
+            center.post(name: LinkedInUser.upgradedNotification, object: nil, userInfo: ["level": "gold"])
+        }
+    }
 }
