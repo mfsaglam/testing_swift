@@ -16,4 +16,4 @@ Testing Swift will give you a thorough grounding in the key testing techniques w
 
 
 ## Links
-[![store](https://www.hackingwithswift.com/img/book-testing@2x.png)](https://www.linkedin.com/in/fatih-saglam-879603181/)
+[![store](https://www.hackingwithswift.com/img/book-testing@2x.png)](https://www.hackingwithswift.com/store/testing-swift/)
