@@ -24,7 +24,7 @@ final class LinkedInUserTests: XCTestCase {
         let expectation = XCTNSNotificationExpectation(name: LinkedInUser.upgradedNotification)
 
         // when
-        user.upgrade()
+        user.upgradeWithLevel()
 
         // then
         wait(for: [expectation], timeout: 3)

@@ -65,16 +65,16 @@ struct LinkedInUser {
 //        }
 //    }
     
-    func upgradeWithLevel() {
-        DispatchQueue.global().async {
-            Thread.sleep(forTimeInterval: 1)
-            let center = NotificationCenter.default
-            center.post(name: LinkedInUser.upgradedNotification, object: nil, userInfo: ["level": "gold"])
-        }
-    }
+//    func upgradeWithLevel() {
+//        DispatchQueue.global().async {
+//            Thread.sleep(forTimeInterval: 1)
+//            let center = NotificationCenter.default
+//            center.post(name: LinkedInUser.upgradedNotification, object: nil, userInfo: ["level": "gold"])
+//        }
+//    }
     
     ///Dependency injection
-    func upgrade(using center: NotificationCenter = NotificationCenter.default) {
+    func upgradeWithLevel(using center: NotificationCenter = NotificationCenter.default) {
         DispatchQueue.global().async {
             Thread.sleep(forTimeInterval: 1)
             center.post(name: LinkedInUser.upgradedNotification, object: nil, userInfo: ["level": "gold"])
