@@ -87,4 +87,10 @@ final class PrimeCalculatorTests: XCTestCase {
 
         wait(for: [expectation], timeout: 1.8)
     }
+    
+    func testPrimePerformance() {
+        measure {
+            _ = PrimeCalculator.calculate(upTo: 1_000_000)
+        }
+    }
 }
