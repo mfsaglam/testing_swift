@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		124193FF2920F34B004FF907 /* LinkedInUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124193FE2920F34B004FF907 /* LinkedInUserTests.swift */; };
+		124194012922659A004FF907 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124194002922659A004FF907 /* House.swift */; };
 		125D7B3F2913E73600AA25FC /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D7B3E2913E73600AA25FC /* Converter.swift */; };
 		125D7B412913E79F00AA25FC /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D7B402913E79F00AA25FC /* ConverterTests.swift */; };
 		127590492912BD7300FB1E75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127590482912BD7300FB1E75 /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		124193FE2920F34B004FF907 /* LinkedInUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInUserTests.swift; sourceTree = "<group>"; };
+		124194002922659A004FF907 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		125D7B3E2913E73600AA25FC /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		125D7B402913E79F00AA25FC /* ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTests.swift; sourceTree = "<group>"; };
 		127590452912BD7300FB1E75 /* First.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = First.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,7 @@
 				125D7B3E2913E73600AA25FC /* Converter.swift */,
 				12A9C98C2917E16B003625FB /* User.swift */,
 				12A9C9A5291C1AB5003625FB /* PrimeCalculator.swift */,
+				124194002922659A004FF907 /* House.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			files = (
 				1275904D2912BD7300FB1E75 /* ViewController.swift in Sources */,
 				127590492912BD7300FB1E75 /* AppDelegate.swift in Sources */,
+				124194012922659A004FF907 /* House.swift in Sources */,
 				12A9C98D2917E16B003625FB /* User.swift in Sources */,
 				12A9C9A6291C1AB5003625FB /* PrimeCalculator.swift in Sources */,
 				127590792912BD9D00FB1E75 /* Hater.swift in Sources */,
