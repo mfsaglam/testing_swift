@@ -2,7 +2,7 @@
 //  SecondUITests.swift
 //  SecondUITests
 //
-//  Created by Fatih Sağlam on 2.11.2022.
+//  Created by Fatih Sağlam on 14.11.2022.
 //
 
 import XCTest
