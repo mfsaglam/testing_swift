@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  First
+//  Second
 //
 //  Created by Fatih Sağlam on 2.11.2022.
 //
