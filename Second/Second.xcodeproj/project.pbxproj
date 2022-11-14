@@ -16,6 +16,7 @@
 		12665A292922727B00F6DA14 /* SecondTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12665A282922727B00F6DA14 /* SecondTests.swift */; };
 		12665A332922727B00F6DA14 /* SecondUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12665A322922727B00F6DA14 /* SecondUITests.swift */; };
 		12665A352922727B00F6DA14 /* SecondUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12665A342922727B00F6DA14 /* SecondUITestsLaunchTests.swift */; };
+		12665A42292273E600F6DA14 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12665A41292273E600F6DA14 /* House.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		12665A2E2922727B00F6DA14 /* SecondUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12665A322922727B00F6DA14 /* SecondUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUITests.swift; sourceTree = "<group>"; };
 		12665A342922727B00F6DA14 /* SecondUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		12665A41292273E600F6DA14 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				12665A1A2922727B00F6DA14 /* Assets.xcassets */,
 				12665A1C2922727B00F6DA14 /* LaunchScreen.storyboard */,
 				12665A1F2922727B00F6DA14 /* Info.plist */,
+				12665A41292273E600F6DA14 /* House.swift */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				12665A162922727A00F6DA14 /* ViewController.swift in Sources */,
 				12665A122922727A00F6DA14 /* AppDelegate.swift in Sources */,
+				12665A42292273E600F6DA14 /* House.swift in Sources */,
 				12665A142922727A00F6DA14 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
