@@ -8,6 +8,14 @@
 import XCTest
 @testable import First
 
+final class AI {
+    func startMove(_ completion: @escaping () -> Void) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            completion()
+        }
+    }
+}
+
 final class PrimeCalculatorTests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -62,5 +70,21 @@ final class PrimeCalculatorTests: XCTestCase {
 
         let expectation = XCTNSPredicateExpectation(predicate: predicate, object: progress)
         wait(for: [expectation], timeout: 10)
+    }
+    
+    func testAIShouldWait2SecondsBeforeMove() {
+        // given
+        let ai = AI()
+        let expectation = XCTestExpectation(description: "Computer must wait at least two seconds before taking its turn")
+        expectation.isInverted = true
+
+        // when
+        ai.startMove() {
+            // then
+            // pause competed; mark that we finished our turn
+            expectation.fulfill()
+        }
+
+        wait(for: [expectation], timeout: 1.8)
     }
 }
