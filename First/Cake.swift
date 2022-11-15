@@ -15,6 +15,6 @@ struct Cake {
 
         let cost = 1 + (ingredients.count * 3)
         print("The cake is ready; please pay \(cost).")
-        return 10
+        return cost
     }
 }

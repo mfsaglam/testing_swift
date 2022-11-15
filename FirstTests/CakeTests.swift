@@ -29,5 +29,14 @@ final class CakeTests: XCTestCase {
         // then
         XCTAssertEqual(cost, 10)
     }
+    
+    func testOneIngredientCakeCosts4() {
+        let cake = Cake()
+        let ingredients = ["chocolate"]
+        
+        let cost = cake.bake(ingredients: ingredients)
+        
+        XCTAssertEqual(cost, 4)
+    }
 
 }
