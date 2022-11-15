@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1214D67A2923BC85001DC5CD /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1214D6792923BC85001DC5CD /* Cake.swift */; };
+		1214D67C2923BD32001DC5CD /* CakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1214D67B2923BD32001DC5CD /* CakeTests.swift */; };
 		124193FF2920F34B004FF907 /* LinkedInUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124193FE2920F34B004FF907 /* LinkedInUserTests.swift */; };
 		124194012922659A004FF907 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124194002922659A004FF907 /* House.swift */; };
 		12419403292266D6004FF907 /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12419402292266D6004FF907 /* HouseTests.swift */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		1214D6792923BC85001DC5CD /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
+		1214D67B2923BD32001DC5CD /* CakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTests.swift; sourceTree = "<group>"; };
 		124193FE2920F34B004FF907 /* LinkedInUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInUserTests.swift; sourceTree = "<group>"; };
 		124194002922659A004FF907 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		12419402292266D6004FF907 /* HouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				12A9C994291AC9B7003625FB /* ThrowingTests.swift */,
 				12A9C996291AD7C5003625FB /* ViewControllerTests.swift */,
 				12419402292266D6004FF907 /* HouseTests.swift */,
+				1214D67B2923BD32001DC5CD /* CakeTests.swift */,
 			);
 			path = FirstTests;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12A9C997291AD7C5003625FB /* ViewControllerTests.swift in Sources */,
+				1214D67C2923BD32001DC5CD /* CakeTests.swift in Sources */,
 				12A9C98F2917E344003625FB /* UserTests.swift in Sources */,
 				12419403292266D6004FF907 /* HouseTests.swift in Sources */,
 				12A9C995291AC9B7003625FB /* ThrowingTests.swift in Sources */,

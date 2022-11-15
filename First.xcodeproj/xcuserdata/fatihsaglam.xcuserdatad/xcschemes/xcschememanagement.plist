@@ -12,7 +12,7 @@
 		<key>First.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -22,12 +22,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1275905A2912BD7400FB1E75</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>127590642912BD7400FB1E75</key>
+		<key>12A9C99B291C17F3003625FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
