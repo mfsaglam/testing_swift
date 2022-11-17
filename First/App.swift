@@ -68,7 +68,7 @@ struct UnreleasedAppStub: AppProtocol {
     var minimumAge = 0
     var isReleased = false
 
-    func canBePurchased(by user: UserProtocol) -> Bool {
+    func canBePurchased(by user: AppUserProtocol) -> Bool {
         return false
     }
 }
