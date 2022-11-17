@@ -29,9 +29,11 @@ final class AppTests: XCTestCase {
                 return false
             }
         }
-        
+                
         var sut = AppUser(funds: 100, age: 22, apps: [])
         let unreleasedApp = UnreleasedAppStub()
+        
+        type(of: unreleasedApp).printTerms()
         
         let wasBought = sut.buy(unreleasedApp)
         
