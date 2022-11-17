@@ -62,13 +62,3 @@ struct AppUser: AppUserProtocol {
         }
     }
 }
-
-struct UnreleasedAppStub: AppProtocol {
-    var price: Decimal = 0
-    var minimumAge = 0
-    var isReleased = false
-
-    func canBePurchased(by user: AppUserProtocol) -> Bool {
-        return false
-    }
-}

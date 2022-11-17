@@ -19,6 +19,17 @@ final class AppTests: XCTestCase {
     }
     
     func testUserCanNotBuyUnreleasedApp() {
+        
+        struct UnreleasedAppStub: AppProtocol {
+            var price: Decimal = 0
+            var minimumAge = 0
+            var isReleased = false
+
+            func canBePurchased(by user: AppUserProtocol) -> Bool {
+                return false
+            }
+        }
+        
         var sut = AppUser(funds: 100, age: 22, apps: [])
         let unreleasedApp = UnreleasedAppStub()
         
