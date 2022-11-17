@@ -23,12 +23,12 @@ protocol AppProtocol {
     func canBePurchased(by user: AppUserProtocol) -> Bool
 }
 
-struct App {
+struct App: AppProtocol {
     var price: Decimal
     var minimumAge: Int
     var isReleased: Bool
     
-    func canBePurchased(by user: AppUser) -> Bool {
+    func canBePurchased(by user: AppUserProtocol) -> Bool {
         guard isReleased else {
             return false
         }
@@ -45,14 +45,14 @@ struct App {
     }
 }
 
-struct AppUser {
+struct AppUser: AppUserProtocol {
     var funds: Decimal
     var age: Int
-    var apps: [App]
-    
-    mutating func buy(_ app: App) -> Bool {
+    var apps: [AppProtocol]
+
+    mutating func buy(_ app: AppProtocol) -> Bool {
         let possible = app.canBePurchased(by: self)
-        
+
         if possible {
             apps.append(app)
             funds -= app.price
