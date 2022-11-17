@@ -7,6 +7,22 @@
 
 import Foundation
 
+protocol AppUserProtocol {
+    var funds: Decimal { get set }
+    var age: Int { get set }
+    var apps: [AppProtocol] { get set }
+
+    mutating func buy(_ app: AppProtocol) -> Bool
+}
+
+protocol AppProtocol {
+    var price: Decimal { get set }
+    var minimumAge: Int { get set }
+    var isReleased: Bool { get set }
+
+    func canBePurchased(by user: AppUserProtocol) -> Bool
+}
+
 struct App {
     var price: Decimal
     var minimumAge: Int
