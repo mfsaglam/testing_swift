@@ -32,6 +32,7 @@
 		12A9C99F291C17F3003625FB /* AsynchronousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C99E291C17F3003625FB /* AsynchronousTests.swift */; };
 		12A9C9A6291C1AB5003625FB /* PrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C9A5291C1AB5003625FB /* PrimeCalculator.swift */; };
 		12A9C9A9291C23A8003625FB /* PrimeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9C9A7291C2344003625FB /* PrimeCalculatorTests.swift */; };
+		12C8A0E62927F4470049A4E4 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C8A0E52927F4470049A4E4 /* Tweet.swift */; };
 		12EB9A452925568800890830 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB9A442925568800890830 /* App.swift */; };
 		12EB9A472926C79E00890830 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB9A462926C79E00890830 /* AppTests.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 		12A9C99E291C17F3003625FB /* AsynchronousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTests.swift; sourceTree = "<group>"; };
 		12A9C9A5291C1AB5003625FB /* PrimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculator.swift; sourceTree = "<group>"; };
 		12A9C9A7291C2344003625FB /* PrimeCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculatorTests.swift; sourceTree = "<group>"; };
+		12C8A0E52927F4470049A4E4 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		12EB9A442925568800890830 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		12EB9A462926C79E00890830 /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 				12A9C9A5291C1AB5003625FB /* PrimeCalculator.swift */,
 				124194002922659A004FF907 /* House.swift */,
 				1214D6792923BC85001DC5CD /* Cake.swift */,
+				12C8A0E52927F4470049A4E4 /* Tweet.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				127590792912BD9D00FB1E75 /* Hater.swift in Sources */,
 				1275904B2912BD7300FB1E75 /* SceneDelegate.swift in Sources */,
 				125D7B3F2913E73600AA25FC /* Converter.swift in Sources */,
+				12C8A0E62927F4470049A4E4 /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
