@@ -8,9 +8,9 @@
 import Foundation
 
 struct Tweet {
-    var text: String
-    var author: String
-    var date: Date
+    let text: String
+    let author: String
+    let date: Date
 
     init(text: String, author: String, date: Date = Date()) {
         self.text = text
