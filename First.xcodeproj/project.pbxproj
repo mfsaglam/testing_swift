@@ -11,6 +11,7 @@
 		1214D67C2923BD32001DC5CD /* CakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1214D67B2923BD32001DC5CD /* CakeTests.swift */; };
 		1234E3C62928E5FA004767FD /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234E3C52928E5FA004767FD /* ShareView.swift */; };
 		1234E3C82928EAF7004767FD /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234E3C72928EAF7004767FD /* ShareViewController.swift */; };
+		1234E3CA2928F0E3004767FD /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234E3C92928F0E3004767FD /* URLHandler.swift */; };
 		124193FF2920F34B004FF907 /* LinkedInUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124193FE2920F34B004FF907 /* LinkedInUserTests.swift */; };
 		124194012922659A004FF907 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124194002922659A004FF907 /* House.swift */; };
 		12419403292266D6004FF907 /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12419402292266D6004FF907 /* HouseTests.swift */; };
@@ -68,6 +69,7 @@
 		1214D67B2923BD32001DC5CD /* CakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTests.swift; sourceTree = "<group>"; };
 		1234E3C52928E5FA004767FD /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		1234E3C72928EAF7004767FD /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		1234E3C92928F0E3004767FD /* URLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHandler.swift; sourceTree = "<group>"; };
 		124193FE2920F34B004FF907 /* LinkedInUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInUserTests.swift; sourceTree = "<group>"; };
 		124194002922659A004FF907 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		12419402292266D6004FF907 /* HouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				127590562912BD7400FB1E75 /* Info.plist */,
 				12EB9A442925568800890830 /* App.swift */,
 				127590782912BD9D00FB1E75 /* Hater.swift */,
+				1234E3C92928F0E3004767FD /* URLHandler.swift */,
 				125D7B3E2913E73600AA25FC /* Converter.swift */,
 				12A9C98C2917E16B003625FB /* User.swift */,
 				12A9C9A5291C1AB5003625FB /* PrimeCalculator.swift */,
@@ -379,6 +382,7 @@
 				1275904D2912BD7300FB1E75 /* ViewController.swift in Sources */,
 				1214D67A2923BC85001DC5CD /* Cake.swift in Sources */,
 				127590492912BD7300FB1E75 /* AppDelegate.swift in Sources */,
+				1234E3CA2928F0E3004767FD /* URLHandler.swift in Sources */,
 				1234E3C82928EAF7004767FD /* ShareViewController.swift in Sources */,
 				12EB9A452925568800890830 /* App.swift in Sources */,
 				124194012922659A004FF907 /* House.swift in Sources */,
