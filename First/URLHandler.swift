@@ -28,7 +28,10 @@ import UIKit
 //}
 
 struct URLHandler {
-    let urlOpener: (URL, [UIApplication.OpenExternalURLOptionsKey: Any], ((Bool) -> Void)?) -> Void = UIApplication.shared.open
+    
+    typealias URLOpening = (URL, [UIApplication.OpenExternalURLOptionsKey: Any], ((Bool) -> Void)?) -> Void
+    
+    let urlOpener: URLOpening = UIApplication.shared.open
 
     func open(url: URL) {
         if url.absoluteString.hasPrefix("internal://") {
