@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1214D67A2923BC85001DC5CD /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1214D6792923BC85001DC5CD /* Cake.swift */; };
 		1214D67C2923BD32001DC5CD /* CakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1214D67B2923BD32001DC5CD /* CakeTests.swift */; };
+		1234E3C62928E5FA004767FD /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234E3C52928E5FA004767FD /* ShareView.swift */; };
 		124193FF2920F34B004FF907 /* LinkedInUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124193FE2920F34B004FF907 /* LinkedInUserTests.swift */; };
 		124194012922659A004FF907 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124194002922659A004FF907 /* House.swift */; };
 		12419403292266D6004FF907 /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12419402292266D6004FF907 /* HouseTests.swift */; };
@@ -64,6 +65,7 @@
 /* Begin PBXFileReference section */
 		1214D6792923BC85001DC5CD /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
 		1214D67B2923BD32001DC5CD /* CakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTests.swift; sourceTree = "<group>"; };
+		1234E3C52928E5FA004767FD /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		124193FE2920F34B004FF907 /* LinkedInUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInUserTests.swift; sourceTree = "<group>"; };
 		124194002922659A004FF907 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		12419402292266D6004FF907 /* HouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				124194002922659A004FF907 /* House.swift */,
 				1214D6792923BC85001DC5CD /* Cake.swift */,
 				12C8A0E52927F4470049A4E4 /* Tweet.swift */,
+				1234E3C52928E5FA004767FD /* ShareView.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1234E3C62928E5FA004767FD /* ShareView.swift in Sources */,
 				1275904D2912BD7300FB1E75 /* ViewController.swift in Sources */,
 				1214D67A2923BC85001DC5CD /* Cake.swift in Sources */,
 				127590492912BD7300FB1E75 /* AppDelegate.swift in Sources */,
