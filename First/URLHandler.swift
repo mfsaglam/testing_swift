@@ -7,12 +7,22 @@
 
 import UIKit
 
+protocol ApplicationProtocol {
+    func open(_ url: URL, options: [UIApplication.OpenExternalURLOptionsKey: Any], completionHandler completion: ((Bool) -> Void)?)
+}
+
+extension UIApplication: ApplicationProtocol { }
+
 struct URLHandler {
+    
+    let application: ApplicationProtocol
+    
     func open(url: URL) {
         if url.absoluteString.hasPrefix("internal://") {
             // run some app-specific code
         } else {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            ///hidden dependency, behaviour  we can not control
+            application.open(url, options: [:], completionHandler: nil)
         }
     }
 }
