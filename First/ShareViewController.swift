@@ -10,8 +10,11 @@ import UIKit
 class ShareViewController: UIViewController {
     
     override func loadView() {
-        view = ShareView(shareAction: shareContent)
+        view = ShareView { [weak self] in
+            self?.shareContent(text: $0)
+        }
     }
+
     
     func shareContent(text: String) {
         print("sharing \(text)...")
