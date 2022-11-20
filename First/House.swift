@@ -27,13 +27,19 @@ struct House {
     }
 }
 
+protocol HouseProtocol {
+    var numberOfViewings: Int { get set }
+
+    func conductViewing()
+}
+
 class Buyer {
-    func view(_ house: HouseForSale) {
+    func view(_ house: HouseProtocol) {
         house.conductViewing()
     }
 }
 
-class HouseForSale {
+class HouseForSale: HouseProtocol {
     var numberOfViewings = 0
 
     func conductViewing() {
