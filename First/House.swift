@@ -46,3 +46,11 @@ class HouseForSale: HouseProtocol {
         numberOfViewings += 1
     }
 }
+
+class HouseForSaleMock: HouseProtocol {
+    var numberOfViewings = 0
+
+    func conductViewing() {
+        numberOfViewings += 1
+    }
+}

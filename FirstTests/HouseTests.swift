@@ -39,5 +39,14 @@ final class HouseTests: XCTestCase {
         
         XCTAssertEqual(house.numberOfViewings, startViewings + 1)
     }
+    
+    func testBuyerViewingHouseAddsOneToViewings() {
+        let buyer = Buyer()
+        let house = HouseForSaleMock()
+        
+        buyer.view(house)
+        
+        XCTAssertEqual(house.numberOfViewings, 1)
+    }
 
 }
