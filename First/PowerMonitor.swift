@@ -11,17 +11,30 @@ struct PowerMonitor {
     var device: UIDevice
     
     func getStatus() -> String {
-        switch device.batteryState {
-        case .unknown:
+        if device.batteryState == .unknown {
             return "error"
-        case .unplugged:
+        } else if device.batteryState == .unplugged {
             return "power is down"
-        case .charging:
+        } else {
             return "power is up"
-        case .full:
-            return "power is up"
-        @unknown default:
-            return "error"
         }
+    }
+}
+
+class UnpluggedDeviceMock: UIDevice {
+    override var batteryState: UIDevice.BatteryState {
+        return .unplugged
+    }
+}
+
+class UnknownDeviceMock: UIDevice {
+    override var batteryState: UIDevice.BatteryState {
+        return .unknown
+    }
+}
+
+class ChargingDeviceMock: UIDevice {
+    override var batteryState: UIDevice.BatteryState {
+        return .charging
     }
 }
