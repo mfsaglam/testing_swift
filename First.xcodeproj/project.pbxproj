@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1201CCD9292C053F00F0F584 /* PowerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1201CCD8292C053F00F0F584 /* PowerMonitor.swift */; };
+		1201CCDB292C061500F0F584 /* PowerMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1201CCDA292C061500F0F584 /* PowerMonitorTests.swift */; };
 		1214D67A2923BC85001DC5CD /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1214D6792923BC85001DC5CD /* Cake.swift */; };
 		1214D67C2923BD32001DC5CD /* CakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1214D67B2923BD32001DC5CD /* CakeTests.swift */; };
 		1234E3C62928E5FA004767FD /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234E3C52928E5FA004767FD /* ShareView.swift */; };
@@ -67,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		1201CCD8292C053F00F0F584 /* PowerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitor.swift; sourceTree = "<group>"; };
+		1201CCDA292C061500F0F584 /* PowerMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitorTests.swift; sourceTree = "<group>"; };
 		1214D6792923BC85001DC5CD /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
 		1214D67B2923BD32001DC5CD /* CakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTests.swift; sourceTree = "<group>"; };
 		1234E3C52928E5FA004767FD /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				12419402292266D6004FF907 /* HouseTests.swift */,
 				1214D67B2923BD32001DC5CD /* CakeTests.swift */,
 				12EB9A462926C79E00890830 /* AppTests.swift */,
+				1201CCDA292C061500F0F584 /* PowerMonitorTests.swift */,
 			);
 			path = FirstTests;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1201CCDB292C061500F0F584 /* PowerMonitorTests.swift in Sources */,
 				12A9C997291AD7C5003625FB /* ViewControllerTests.swift in Sources */,
 				1214D67C2923BD32001DC5CD /* CakeTests.swift in Sources */,
 				12A9C98F2917E344003625FB /* UserTests.swift in Sources */,
