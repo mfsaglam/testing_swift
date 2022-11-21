@@ -19,7 +19,7 @@ final class PowerMonitorTests: XCTestCase {
     }
     
     func testUnknownDeviceShowsError() {
-        let sut = PowerMonitor(device: UnknownDeviceMock())
+        let sut = PowerMonitor(device: DeviceMock(testBatteryState: .unknown))
         
         let state = sut.getStatus()
         
@@ -27,7 +27,7 @@ final class PowerMonitorTests: XCTestCase {
     }
     
     func testConnectedDeviceShowsUp() {
-        let sut = PowerMonitor(device: ChargingDeviceMock())
+        let sut = PowerMonitor(device: DeviceMock(testBatteryState: .charging))
         
         let state = sut.getStatus()
         
@@ -35,7 +35,7 @@ final class PowerMonitorTests: XCTestCase {
     }
     
     func testUnpluggedDeviceShowsDown() {
-        let sut = PowerMonitor(device: UnpluggedDeviceMock())
+        let sut = PowerMonitor(device: DeviceMock(testBatteryState: .unplugged))
         
         let state = sut.getStatus()
         

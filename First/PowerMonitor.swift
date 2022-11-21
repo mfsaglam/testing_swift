@@ -21,20 +21,16 @@ struct PowerMonitor {
     }
 }
 
-class UnpluggedDeviceMock: UIDevice {
+class DeviceMock: UIDevice {
+    var testBatteryState: BatteryState
+    
+    init(testBatteryState: BatteryState) {
+        self.testBatteryState = testBatteryState
+    }
+    
     override var batteryState: UIDevice.BatteryState {
-        return .unplugged
+        return testBatteryState
     }
 }
 
-class UnknownDeviceMock: UIDevice {
-    override var batteryState: UIDevice.BatteryState {
-        return .unknown
-    }
-}
 
-class ChargingDeviceMock: UIDevice {
-    override var batteryState: UIDevice.BatteryState {
-        return .charging
-    }
-}
