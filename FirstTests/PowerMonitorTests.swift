@@ -18,6 +18,28 @@ final class PowerMonitorTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
+    func testUnknownDeviceShowsError() {
+        let sut = PowerMonitor(device: UnknownDeviceMock())
+        
+        let state = sut.getStatus()
+        
+        XCTAssertEqual(state, "error")
+    }
     
+    func testConnectedDeviceShowsUp() {
+        let sut = PowerMonitor(device: ChargingDeviceMock())
+        
+        let state = sut.getStatus()
+        
+        XCTAssertEqual(state, "power is up")
+    }
+    
+    func testUnpluggedDeviceShowsDown() {
+        let sut = PowerMonitor(device: UnpluggedDeviceMock())
+        
+        let state = sut.getStatus()
+        
+        XCTAssertEqual(state, "power is down")
+    }
 
 }
