@@ -44,5 +44,16 @@ final class UserTests: XCTestCase {
         
         XCTAssertEqual(rowTitle, "30 items")
     }
+    
+    func testStoreBuyingWithoutUser() {
+        // given
+        let store = Store()
+
+        // when
+        let success = store.buy(product: "War of the Worlds")
+
+        // then
+        XCTAssertTrue(success)
+    }
 
 }
