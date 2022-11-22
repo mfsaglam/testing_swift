@@ -81,3 +81,13 @@ struct LinkedInUser {
         }
     }
 }
+
+class Store {
+    var user: User?
+
+    func buy(product: String) -> Bool {
+        assert(user != nil, "We can't buy anything without a user.")
+        print("The user bought \(product).")
+        return true
+    }
+}
