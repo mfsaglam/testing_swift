@@ -47,13 +47,13 @@ final class UserTests: XCTestCase {
     
     func testStoreBuyingWithoutUser() {
         // given
-        let store = Store()
+        let store = StoreMock()
 
         // when
-        let success = store.buy(product: "War of the Worlds")
+        _ = store.buy(product: "War of the Worlds")
 
         // then
-        XCTAssertTrue(success)
+        XCTAssertFalse(store.wasAssertionSuccessful)
     }
 
 }
