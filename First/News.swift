@@ -5,6 +5,11 @@
 //  Created by Fatih Sağlam on 23.11.2022.
 //
 
+///1- What was the URL that was requested?
+///2- Was a network request actually started?
+///3- Did the request come back with certain data?
+///4- Did the request come back with a specific error?
+
 import Foundation
 
 class News {
