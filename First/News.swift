@@ -38,3 +38,7 @@ protocol URLSessionProtocol {
 }
 
 extension URLSession: URLSessionProtocol { }
+
+class DataTaskMock: URLSessionDataTask {
+    override func resume() { }
+}
