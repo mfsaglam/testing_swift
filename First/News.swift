@@ -42,3 +42,29 @@ extension URLSession: URLSessionProtocol { }
 class DataTaskMock: URLSessionDataTask {
     override func resume() { }
 }
+
+class DataTaskMock2: URLSessionDataTask {
+    var completionHandler: (Data?, URLResponse?, Error?) -> Void
+    var resumeWasCalled = false
+
+    // stash away the completion handler so we can call it later
+    init(completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
+        self.completionHandler = completionHandler
+    }
+
+    override func resume() {
+        // resume was called, so flip our boolean and call the completion
+        resumeWasCalled = true
+        completionHandler(nil, nil, nil)
+    }
+}
+
+class URLSessionMock: URLSessionProtocol {
+    var lastURL: URL?
+
+    func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+        defer { completionHandler(nil, nil, nil) }
+        lastURL = url
+        return DataTaskMock()
+    }
+}
