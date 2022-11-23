@@ -68,3 +68,13 @@ class URLSessionMock: URLSessionProtocol {
         return DataTaskMock()
     }
 }
+
+class URLSessionMock2: URLSessionProtocol {
+    var dataTask: DataTaskMock2?
+
+    func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+        let newDataTask = DataTaskMock2(completionHandler: completionHandler)
+        dataTask = newDataTask
+        return newDataTask
+    }
+}
