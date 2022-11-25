@@ -15,8 +15,8 @@ class News {
         self.url = url
     }
     
-    func fetch(completionHandler: @escaping () -> Void) {
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+    func fetch(using session: URLSession = URLSession.shared, completionHandler: @escaping () -> Void) {
+        let task = session.dataTask(with: url) { data, response, error in
             if let data = data {
                 self.stories = String(decoding: data, as: UTF8.self)
             }
