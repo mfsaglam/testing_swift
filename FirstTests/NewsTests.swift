@@ -17,6 +17,23 @@ final class NewsTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testNewsFetchLoadsCorrectURL() {
+        // given
+        let url = URL(string: "https://www.apple.com/newsroom/rss-feed.rss")!
+        let news = News(url: url)
+        let session = URLSessionMock()
+        let expectation = XCTestExpectation(description: "Downloading news stories.")
+
+        // when
+        news.fetch(using: session) {
+            XCTAssertEqual(URL(string: "https://www.apple.com/newsroom/rss-feed.rss"), session.lastURL)
+            expectation.fulfill()
+        }
+
+        // then
+        wait(for: [expectation], timeout: 5)
+    }
 
     func testNewsFetchCallsResume() {
         let url = URL(string: "https://www.apple.com/newsroom/rss-feed.rss")!
