@@ -38,14 +38,31 @@ final class NewsTests: XCTestCase {
     func testNewsFetchCallsResume() {
         let url = URL(string: "https://www.apple.com/newsroom/rss-feed.rss")!
         let news = News(url: url)
-        let session = URLSessionMock()
+        let session = URLSessionMock(testingResume: true)
         let expectation = XCTestExpectation(description: "Downloading news stories triggers resume()")
         
         news.fetch(using: session) {
-            XCTAssertEqual(session.dataTask?.resumeWasCalled, true)
+            XCTAssertTrue(session.dataTask?.resumeWasCalled ?? false)
             expectation.fulfill()
         }
         wait(for: [expectation], timeout: 5)
     }
+    
+    func testNewsStoriesAreFetched() {
+        // given
+        let url = URL(string: "https://www.apple.com/newsroom/rss-feed.rss")!
+        let news = News(url: url)
+        let session = URLSessionMock()
+        session.testData = Data("Hello, world!".utf8)
+        let expectation = XCTestExpectation(description: "Downloading news stories triggers resume().")
 
+        // when
+        news.fetch(using: session) {
+            XCTAssertEqual(news.stories, "Hello, world!")
+            expectation.fulfill()
+        }
+
+        // then
+        wait(for: [expectation], timeout: 5)
+    }
 }
