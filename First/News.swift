@@ -50,8 +50,12 @@ class DataTaskMock: URLSessionDataTask {
 class URLSessionMock: URLSessionProtocol {
     var dataTask: DataTaskMock?
     var lastURL: URL?
+    var testData: Data?
     
     func dataTask(with url: URL, completionHandler: @escaping @Sendable (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+        defer {
+            completionHandler(testData, nil, nil)
+        }
         let newDataTask = DataTaskMock(completionHandler: completionHandler)
         dataTask = newDataTask
         lastURL = url
