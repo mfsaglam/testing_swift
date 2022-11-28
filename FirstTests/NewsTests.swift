@@ -65,4 +65,25 @@ final class NewsTests: XCTestCase {
         // then
         wait(for: [expectation], timeout: 5)
     }
+    
+    func testNewsStoriesAreFetched2() {
+        // given
+        let url = URL(string: "https://www.apple.com/newsroom/rss-feed.rss")!
+        let news = News(url: url)
+        let expectation = XCTestExpectation(description: "Downloading news stories triggers resume().")
+        URLProtocolMock.testData = Data("Hello, world!".utf8)
+
+        let config = URLSessionConfiguration.ephemeral
+        config.protocolClasses = [URLProtocolMock.self]
+        let session = URLSession(configuration: config)
+
+        // when
+        news.fetch(using: session) {
+            XCTAssertEqual(news.stories, "Hello, world!")
+            expectation.fulfill()
+        }
+
+        // then
+        wait(for: [expectation], timeout: 5)
+    }
 }
