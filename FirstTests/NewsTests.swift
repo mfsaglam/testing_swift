@@ -69,9 +69,12 @@ final class NewsTests: XCTestCase {
     func testNewsStoriesAreFetched2() {
         // given
         let url = URL(string: "https://www.apple.com/newsroom/rss-feed.rss")!
+        URLProtocolMock.testURLs = [url: Data("Hello, world!".utf8)]
+
+//        let url = URL(string: "https://www.apple.com/newsroom/rss-feed.rss")!
         let news = News(url: url)
         let expectation = XCTestExpectation(description: "Downloading news stories triggers resume().")
-        URLProtocolMock.testData = Data("Hello, world!".utf8)
+//        URLProtocolMock.testData = Data("Hello, world!".utf8)
 
         let config = URLSessionConfiguration.ephemeral
         config.protocolClasses = [URLProtocolMock.self]
